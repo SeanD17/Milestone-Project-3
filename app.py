@@ -110,20 +110,22 @@ def logout():
 def add_book():
     if request.method == "POST":
         book = {
-            "category_name": request.form.get("category_name"),
             "book_name": request.form.get("book_name"),
             "author": request.form.get("author"),
+            "category": request.form.get("category"),
             "isbn": request.form.get("isbn"),
             "publisher": request.form.get("author"),
             "price": request.form.get("price"),
             "release_date": request.form.get("release_date"),
-            "created_by": session["user"]
+            "website_url": request.form.get("website_url"),
+            "created_by": session["user"],
+            "comments": request.form.get("comments")
         }
         mongo.db.books.insert_one(book)
         flash("Book Successfully Added")
         return redirect(url_for("get_books"))
 
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category", 1)
     return render_template("add_book.html", categories=categories)
 
 
@@ -131,20 +133,22 @@ def add_book():
 def edit_book(book_id):
     if request.method == "POST":
         submit = {
-            "category_name": request.form.get("category_name"),
             "book_name": request.form.get("book_name"),
             "author": request.form.get("author"),
+            "category": request.form.get("category"),
             "isbn": request.form.get("isbn"),
             "publisher": request.form.get("author"),
             "price": request.form.get("price"),
             "release_date": request.form.get("release_date"),
-            "created_by": session["user"]
+            "website_url": request.form.get("website_url"),
+            "created_by": session["user"],
+            "comments": request.form.get("comments")
         }
-        mongo.db.tasks.update({"_id": ObjectId(book_id)}, submit)
+        mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("Book Successfully Updated")
 
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category", 1)
     return render_template("edit_book.html", book=book, categories=categories)
 
 
@@ -157,7 +161,7 @@ def delete_book(book_id):
 
 @app.route("/get_categories")
 def get_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    categories = list(mongo.db.categories.find().sort("category", 1))
     return render_template("categories.html", categories=categories)
 
 
@@ -165,7 +169,7 @@ def get_categories():
 def add_category():
     if request.method == "POST":
         category = {
-            "category_name": request.form.get("category_name")
+            "category": request.form.get("category")
         }
         mongo.db.categories.insert_one(category)
         flash("New Category Added")
@@ -178,7 +182,7 @@ def add_category():
 def edit_category(category_id):
     if request.method == "POST":
         submit = {
-            "category_name": request.form.get("category_name")
+            "category": request.form.get("category")
         }
         mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
         flash("Category Successfully Updated")
