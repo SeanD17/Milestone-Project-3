@@ -2,7 +2,7 @@
 {% block content %}
 
     <h3 class="light-blue-text text-darken-4 center-align">Add Category</h3>
-
+    <div id="book">
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
             <!-- category -->
@@ -24,5 +24,5 @@
             </div>
         </form>
     </div>
-
+</div>
 {% endblock %}
