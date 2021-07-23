@@ -14,17 +14,11 @@
     margin: 5px;
     line-height: 42px;
 }
-#book{
-    background-attachment: fixed;
-    background-image: url('static/images/bookshop.jpg');
-    background-position: bottom;
-    padding-left:20px;
-    padding-right:20px;
-    padding-bottom:20px;
-    margin:auto;  
+p{
+    color:orange;
 }
 footer {
-    background-color: peru;
+    background-color:orange;
     color: #fafafa;
     text-align: center;
     padding-top:20px;
@@ -34,4 +28,16 @@ footer {
     text-align: center;
     font-weight: bold;
 
+}
+/* Social Media icons */
+.social-links li a i {
+    color: #fafafa;
+    background: #8f8f8f;
+    font-size: 25px;
+}
+
+/* Changes the color of the social media links when moused over */
+.social-links li a i:hover {
+    color: lightblue;
+    background: #8f8f8f;
 }

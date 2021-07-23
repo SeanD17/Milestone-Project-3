@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<h3 class="light-blue-text text-darken-4 center-align">Welcome</h3>
+<p>To search for a book on this site,enter in the book name or author name into the "Search Books" box and then click the "Search button".
+</p>
 
-<h3 class="light-blue-text text-darken-4 center-align">All Books</h3>
-<div id="book">
     <div class="row card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12 m12">
             <div class="row valign-wrapper center-align">
@@ -21,7 +22,6 @@
             </div>
         </form>
     </div>
-</div>
 {% if books|length > 0 %}
 <ul class="collapsible">
     {% for book in books %}
@@ -39,8 +39,8 @@
             </div>
         </div>
         <div class="collapsible-body">
-            <strong>{{ book.book_name }}</strong>
-            <p><em>by: {{ book.author_name }}</em></p>
+            <h5><strong>{{ book.book_name }}</strong></h5>
+            <strong>by: {{ book.author_name }}</strong>
             <strong>{{ book.category }}</strong>
 
         </div>
@@ -50,35 +50,5 @@
 {% else %}
 <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
 {% endif %}
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m12">
-                <h5 class="social-title">My Social Media Links
-                    <i class="far fa-envelope" aria-hidden="true"></i>
 
-                </h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-
-                        <h5><a target="_blank" href="https://www.linkedin.com/in/sean-dolan-7b380a109/">LinkedIn
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a></h5>
-                    </li>
-                </ul>
-                <ul class="list-inline social-links">
-
-                    <li class="list-inline-item">
-                        <h5><a target="_blank" href="https://github.com/SeanD17">GitHub
-                            <i class="fab fa-github-square" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a></h5>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</footer>
 {% endblock %}
