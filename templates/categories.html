@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Manage Categories</h3>
-    <div id="book">
+    <h3>Manage Categories</h3>
+    <p>Please click the "Add Category" button to add a new book category to the site,or click on either Edit or Delete on the below Categories.</p>
     <div class="row">
-        <div class="col s12 center-align">
+        <div class="col s12 m12 center-align">
             <a href="{{ url_for('add_category') }}" class="btn-large light-blue darken-2 text-shadow">
                 Add Category <i class="fas fa-plus-square right"></i>
             </a>
@@ -13,7 +13,7 @@
 
     <div class="row">
         {% for category in categories %}
-            <div class="col s12 m3">
+            <div class="col s12 m12">
                 <div class="card light-blue darken-4 text-shadow center-align">
                     <div class="card-content white-text">
                         <span class="card-title">{{ category.category }}</span>
@@ -26,5 +26,4 @@
             </div>
         {% endfor %}
     </div>
-</div>
 {% endblock %}

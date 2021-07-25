@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">Edit Book</h3>
-<div id="book">
+<h3>Edit Book</h3>
 <div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="{{ url_for('edit_book', book_id=book._id) }}">
+    <p>Please click the "Edit Book" button to save changes to the existing book or click "Go Back" to leave this page and return to the homepage.
+        <i class="fas fa-edit"></i>
+    </p>
+    <form class="col s12 m12" method="POST" action="{{ url_for('edit_book', book_id=book._id) }}">
         <!-- book name -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="fas fa-book prefix"></i>
                 <input id="book_name" name="book_name" minlength="5" maxlength="50" value="{{ book.book_name }}"
                     type="text" class="validate" required>
                 <label for="book_name">Book Name</label>
@@ -16,8 +18,8 @@
         </div>
         <!-- author name -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="fas fa-pen prefix"></i>
                 <input id="author_name" name="author_name" minlength="5" maxlength="50" value="{{ book.author_name }}"
                     type="text" class="validate" required>
                 <label for="author_name">Author Name</label>
@@ -25,7 +27,7 @@
         </div>
         <!-- category selection -->
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                 <select id="category" name="category" class="validate" required>
                     <option value="" disabled>Choose Category</option>
@@ -42,8 +44,8 @@
         </div>
         <!-- isbn -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="fas fa-barcode prefix"></i>
                 <input id="isbn" name="isbn" minlength="5" maxlength="50" value="{{ book.isbn }}" type="text"
                     class="validate" required>
                 <label for="isbn">ISBN</label>
@@ -51,8 +53,8 @@
         </div>
         <!-- publisher -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="far fa-building prefix"></i>
                 <input id="publisher" name="publisher" minlength="5" maxlength="50" value="{{ book.publisher }}"
                     type="text" class="validate" required>
                 <label for="publisher">Publisher</label>
@@ -60,8 +62,8 @@
         </div>
         <!-- price -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="fas fa-money-bill-alt prefix"></i>
                 <input id="price" name="price" minlength="1" maxlength="5" value="{{ book.price }}" type="text"
                     class="validate" required>
                 <label for="price">Price</label>
@@ -69,7 +71,7 @@
         </div>
         <!-- release date -->
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
                 <input id="release_date" name="release_date" value="{{ book.realease_date }}" type="text"
                     class="datepicker validate" required>
@@ -78,8 +80,8 @@
         </div>
         <!-- website url -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="fab fa-internet-explorer prefix"></i>
                 <textarea id="website_url" name="website_url" minlength="5" maxlength="200"
                     class="materialize-textarea validate" required>
                 {{- book.website_url -}}
@@ -89,8 +91,8 @@
         </div>
         <!-- comments -->
         <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+            <div class="input-field col s12 m12">
+                <i class="far fa-comment-dots prefix"></i>
                 <textarea id="comments" name="comments" minlength="5" maxlength="200"
                     class="materialize-textarea validate" required>
                         {{- book.comments -}}
@@ -101,14 +103,15 @@
 
         <!-- submit button -->
         <div class="row">
-            <div class="col s12 center-align">
-                <!-- cancel button -->
-                <a href="{{ url_for('get_books') }}" class="btn-large red text-shadow">
-                    Cancel <i class="fas fa-times-circle right"></i>
-                </a>
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+            <div class="col s12 m12 center-align">
+               <button type="submit" class="btn-large light-blue darken-1 text-shadow">
                     Edit Book <i class="fas fa-edit right"></i>
                 </button>
+                <!-- cancel button -->
+                <a href="{{ url_for('get_books') }}" class="btn-large red text-shadow">
+                    Go Back<i class="fas fa-times-circle right"></i>
+                </a>
+                
             </div>
         </div>
     </form>

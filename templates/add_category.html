@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Add Category</h3>
-    <div id="book">
+    <h3>Add Category</h3>
+    <p>Please fill in the below details and click the "Add Category" button to add a category to the site.
+        <i class="fas fa-plus"></i>
+    </p>
     <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
+        <form class="col s12 m12" method="POST" action="{{ url_for('add_category') }}">
             <!-- category -->
             <div class="row">
                 <div class="input-field col s12">

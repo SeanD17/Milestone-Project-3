@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
@@ -26,7 +26,7 @@
         <!-- top navbar -->
         <nav class="nav-extended text-shadow light-blue darken-1">
             <div class="nav-wrapper">
-                <a href="{{ url_for('get_books') }}" class="brand-logo">Dolan's Good Books</a>
+                <a href="{{ url_for('get_books') }}" class="brand-logo">Dolan's Good Books </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
@@ -50,7 +50,8 @@
             <li>
                 <h4 class="center-align light-blue-text text-darken 4">Dolan's Good Books</h4>
             </li>
-            <li><a href="{{ url_for('get_books') }}">Home</a></li>
+            <li><a href="{{ url_for('get_books') }}">Home</a>
+            </li>
             {% if session.user %}
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="{{ url_for('add_book') }}">New Book</a></li>
