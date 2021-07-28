@@ -12,7 +12,7 @@
         <div class="row">
             <div class="input-field col s12 m12">
                 <i class="fas fa-book prefix"></i>
-                <input id="book_name" name="book_name" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="book_name" name="book_name" minlength="3" maxlength="50" type="text" class="validate"
                     required>
                 <label for="book_name">Book Name</label>
             </div>
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="input-field col s12 m12">
                 <i class="fas fa-money-bill-alt prefix"></i>
-                <input id="price" name="price" minlength="5" maxlength="50" type="text" class="validate" required>
+                <input id="price" name="price" minlength="4" maxlength="5" type="text" class="validate" required>
                 <label for="price">Price</label>
             </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="row">
             <div class="input-field col s12 m12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="release_date" name="release_date" type="text" class="datepicker validate" required>
+                <input id="release_date" name="release_date" type="date" class="validate" required>
                 <label for="release_date">Release Date</label>
             </div>
         </div>
@@ -76,11 +76,19 @@
         <div class="row">
             <div class="input-field col s12 m12">
                 <i class="fab fa-internet-explorer prefix"></i>
-                <textarea id="website_url" name="website_url" minlength="5" maxlength="200"
-                    class="materialize-textarea validate" required></textarea>
+                <input id="website_url" name="website_url" type="url" class="validate" required>
                 <label for="website_url">URL to puchase this book</label>
             </div>
         </div>
+        <!-- image url -->
+        <div class="row">
+            <div class="input-field col s12 m12">
+                <i class="fas fa-portrait prefix"></i>
+                <input id="image_url" name="image_url" type="url" class="validate" required>
+                <label for="website_url">Book Cover URL</label>
+            </div>
+        </div>
+        
         <!-- comments -->
         <div class="row">
             <div class="input-field col s12 m12">
