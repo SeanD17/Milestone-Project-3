@@ -16,13 +16,14 @@
 }
 p{
     color:orange;
+    font-weight: bold;
+    text-align: center;
 }
 footer {
     background-color:orange;
     color: #fafafa;
     text-align: center;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-bottom: 1%;
 }
 .social-title {
     text-align: center;
@@ -38,6 +39,16 @@ footer {
 
 /* Changes the color of the social media links when moused over */
 .social-links li a i:hover {
-    color: lightblue;
+    color: lightgreen;
     background: #8f8f8f;
+}
+h5{
+    color: lightseagreen;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: lightseagreen;
+    font-weight: bold; 
 }
