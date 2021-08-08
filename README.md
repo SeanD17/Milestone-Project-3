@@ -61,7 +61,7 @@ I also provided my profile links to GitHub and LinkedIn.
 ## Surface:
 I used orange text color to make it stand out against the background.
 
-The orange background footer and header was chosen to stand out on the site.
+The orange background footer and red background header was chosen to stand out on the site.
 
 ## Icons:
 I used Font Awesome for the social media icons of GitHub and LinkedIn,as well as for various icons seen throughout the site.
@@ -69,25 +69,25 @@ I used Font Awesome for the social media icons of GitHub and LinkedIn,as well as
 ## Wireframes:
 I have included wireframes for each page on this website, click on the below page names to see these wireframes:
 
-[Homepage]()
+[Homepage](wireframes/Dolans Good Books Homepage.pdf)
 
-[Login]()
+[Login](wireframes/Dolans Good Books Login.pdf)
 
-[Add Book]()
+[Add Book](wireframes/Dolans Good Books Add Books.pdf)
 
-[Add Category]()
+[Add Category](wireframes/Dolans Good Books Add Category.pdf)
 
-[Edit Book]()
+[Edit Book](wireframes/Dolans Good Books Edit Books.pdf)
 
-[Edit Category]()
+[Edit Category](wireframes/Dolans Good Books Edit Category.pdf)
 
-[Manage Categories]()
+[Manage Categories](wireframes/Dolans Good Books Manage Categories.pdf)
 
-[Profile]()
+[Profile](wireframes/Dolans Good Books Profile.pdf)
 
-[Profile Admin]()
+[Profile Admin](wireframes/Dolans Good Books Profile Admin.pdf)
 
-[Register]()
+[Register](wireframes/Dolans Good Books Register.pdf)
 
 ## Features:
 
