@@ -111,14 +111,16 @@ def add_book():
     if request.method == "POST":
         book = {
             "book_name": request.form.get("book_name"),
-            "author": request.form.get("author"),
+            "author_name": request.form.get("author_name"),
             "category": request.form.get("category"),
             "isbn": request.form.get("isbn"),
-            "publisher": request.form.get("author"),
+            "publisher": request.form.get("publisher"),
             "price": request.form.get("price"),
             "release_date": request.form.get("release_date"),
             "website_url": request.form.get("website_url"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"],
+            "star": request.form.get("star"),
             "comments": request.form.get("comments")
         }
         mongo.db.books.insert_one(book)
@@ -134,14 +136,16 @@ def edit_book(book_id):
     if request.method == "POST":
         submit = {
             "book_name": request.form.get("book_name"),
-            "author": request.form.get("author"),
+            "author_name": request.form.get("author_name"),
             "category": request.form.get("category"),
             "isbn": request.form.get("isbn"),
-            "publisher": request.form.get("author"),
+            "publisher": request.form.get("publisher"),
             "price": request.form.get("price"),
             "release_date": request.form.get("release_date"),
             "website_url": request.form.get("website_url"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"],
+            "star": request.form.get("star"),
             "comments": request.form.get("comments")
         }
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
