@@ -67,7 +67,7 @@ The orange background footer and red background header was chosen to stand out o
 I used Font Awesome for the social media icons of GitHub and LinkedIn,as well as for various icons seen throughout the site.
 
 ## Wireframes:
-I have included wireframes for each page on this website:
+I have included wireframes for each page on this website,these can be found on the wireframes folder:
 
                                     Homepage.pdf
                                     Manage Categories.pdf
@@ -173,6 +173,9 @@ All text content in this website was written by me.
 
 ## Media:
 The photos used in this site were obtained from:
+
+Bookshelf background gotten on<a href="https://unsplash.com/s/photos/bookshelf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash</a>
+  
   
 ## Acknowledgments:
 I received inspiration for this project from my mentor Nishant Kumar.
