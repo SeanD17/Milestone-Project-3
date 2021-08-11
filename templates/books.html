@@ -6,7 +6,7 @@
     <i class="fas fa-search"></i>
 </p>
 
-<div class="row card-panel grey lighten-5">
+<div class="row card-panel search">
     <form action="{{ url_for('search') }}" method="post" class="col s12 m12">
         <div class="row valign-wrapper center-align">
             <div class="input-field col s12 m12">
@@ -39,20 +39,14 @@
             </div>
             <div>
                 <i class="fas fa-caret-down"></i>
-                {% if session.user|lower == book.created_by|lower %}
-                <a href="{{ url_for('edit_book', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-                {% endif %}
-                {% if session.user == "admin" %}
-                <a href="{{ url_for('delete_book', book_id=book._id) }}" class="btn-small green accent-4">Delete</a>
-                {% endif %}
             </div>
 
         </div>
         <div class="collapsible-body">
-            <h5><img src="{{ book.image_url}}" alt="Book Cover"></h5>
             <h5><strong>{{ book.book_name }}</strong></h5>
             <h5><strong>{{ book.author_name }}</strong></h5>
             <h5><strong>{{ book.category }}</strong></h5>
+            <h5><img src="{{ book.image_url}}" alt="Book Cover"></h5>
             <h5><strong> <a href="{{ book.website_url}}" target="_blank">Click here to purchase the book.</a></strong>
         </div>
     </li>
