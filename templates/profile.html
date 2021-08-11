@@ -1,15 +1,61 @@
 {% extends "base.html" %}
 {% block content %}
-
-
-    <div class="row">
-        <div class="col s12 m12">
-            <div class="card-panel">
-                <h3>
-                    {{ username }}'s Profile
-                </h3>
-            </div>
+<div class="row">
+       <div class="col s12 m12">
+     
+        <div class="card-panel">
+            <h3>
+                {{ username }}'s Profile
+            </h3>
         </div>
     </div>
-    <p>The below lists all the books that you have created on this site.</p>
+       <p>You have successfully logged on to the website.</p>
+ 
+</div>
+<p>The below lists all the books that you have created on this site.</p>
+{% if books|length > 0 %}
+<ul class="collapsible">
+    {% for book in books %}
+    <li>
+        <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+            <div class="col s12 m12">
+                <strong>{{book.book_name}}
+                    <i class=" far fa-solid fa-star prefix">{{book.star}}</i>
+                    {{book.comments}}</strong>
+            </div>
+            <div>
+                <i class="fas fa-caret-down"></i>
+                {% if session.user|lower == book.created_by|lower %}
+                <a href="{{ url_for('edit_book', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                {% endif %}
+                {% if session.user == "admin" %}
+                <a href="{{ url_for('delete_book', book_id=book._id) }}" class="btn-small green accent-4">Delete</a>
+                {% endif %}
+            </div>
+
+        </div>
+        <div class="collapsible-body">
+
+            <h5>Book Name: <strong> {{ book.book_name }}</strong></h5>
+            <h5>By: <strong>{{ book.author_name }}</strong></h5>
+            <h5>Category: <strong> {{ book.category }}</strong></h5>
+            <h5>ISBN: <strong>{{ book.isbn }}</strong></h5>
+            <h5>Publisher: <strong>{{ book.publisher }}</strong></h5>
+            <h5>Price: <strong>{{ book.price }}</strong></h5>
+            <h5>Release Date: <strong>{{ book.release_date }}</strong></h5>
+            <h5><img src="{{ book.image_url}}" alt="Book Cover"></h5>
+            <h5>Website URL: <strong> <a href="{{ book.website_url}}" target="_blank">Website URL</a></strong>
+                <h5>Your Book Rating: <strong><i class=" far fa-solid fa-star prefix">{{book.star}}</i></strong>
+                </h5>
+                <h5>Your Comment: <strong>{{ book.comments }}</strong></h5>
+
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+
+{% endif %}
+
 {% endblock %}
