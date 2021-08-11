@@ -2,10 +2,6 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.flashes h4 {
-    line-height: 2;
-}
-
 .btn-small {
     margin: 5px;
 }
@@ -14,22 +10,26 @@
     margin: 5px;
     line-height: 42px;
 }
-p{
-    color:orange;
+
+p {
+    color: orange;
     font-weight: bold;
     text-align: center;
 }
+
 footer {
-    background-color:orange;
+    background-color: orange;
     color: #fafafa;
     text-align: center;
     padding-bottom: 1%;
 }
+
 .social-title {
     text-align: center;
     font-weight: bold;
 
 }
+
 /* Social Media icons */
 .social-links li a i {
     color: #fafafa;
@@ -42,17 +42,30 @@ footer {
     color: lightgreen;
     background: #8f8f8f;
 }
-h5{
+
+h5 {
     color: lightseagreen;
     font-weight: bold;
     text-align: center;
 }
-h3{
+
+h3 {
     text-align: center;
     color: lightseagreen;
-    font-weight: bold; 
+    font-weight: bold;
 }
-.background{
-    background-image: url('static/images/bookshelf.jpg');
 
+.background {
+    background-attachment: fixed;
+    margin: auto;
+    background-position: bottom;
+    padding: 1%;
+
+}
+
+.flashes h5 {
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+    background-color: orange;
 }
