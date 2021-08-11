@@ -67,28 +67,19 @@ The orange background footer and red background header was chosen to stand out o
 I used Font Awesome for the social media icons of GitHub and LinkedIn,as well as for various icons seen throughout the site.
 
 ## Wireframes:
-I have included wireframes for each page on this website, click on the below page names to see these wireframes:
+I have included wireframes for each page on this website:
 
-[Homepage](wireframes/Dolans Good Books Homepage.pdf)
-
-[Login](wireframes/Dolans Good Books Login.pdf)
-
-[Add Book](wireframes/Dolans Good Books Add Books.pdf)
-
-[Add Category](wireframes/Dolans Good Books Add Category.pdf)
-
-[Edit Book](wireframes/Dolans Good Books Edit Books.pdf)
-
-[Edit Category](wireframes/Dolans Good Books Edit Category.pdf)
-
-[Manage Categories](wireframes/Dolans Good Books Manage Categories.pdf)
-
-[Profile](wireframes/Dolans Good Books Profile.pdf)
-
-[Profile Admin](wireframes/Dolans Good Books Profile Admin.pdf)
-
-[Register](wireframes/Dolans Good Books Register.pdf)
-
+                                    Homepage.pdf
+                                    Manage Categories.pdf
+                                    Profile Admin.pdf
+                                    Profile.pdf
+                                    Register.pdf
+                                    Edit Category.pdf
+                                    Edit Books.pdf
+                                    Add Category.pdf
+                                    Add Books.pdf
+                                    Login.pdf
+                                    
 ## Features:
 
 <p align="center"><strong>Existing Features:</strong>
