@@ -52,3 +52,7 @@ h3{
     color: lightseagreen;
     font-weight: bold; 
 }
+.background{
+    background-image: url('static/images/bookshelf.jpg');
+
+}
