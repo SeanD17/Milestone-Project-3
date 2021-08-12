@@ -6,11 +6,11 @@
     <i class="fas fa-plus"></i>
 </p>
 <div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="{{ url_for('add_book') }}">
+    <form class="col s12 m12 l12" method="POST" action="{{ url_for('add_book') }}">
 
         <!-- book name -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-book prefix"></i>
                 <input id="book_name" name="book_name" minlength="3" maxlength="50" type="text" class="validate"
                     required>
@@ -19,7 +19,7 @@
         </div>
         <!-- author name -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-pen prefix"></i>
                 <input id="author_name" name="author_name" minlength="5" maxlength="50" type="text" class="validate"
                     required>
@@ -28,7 +28,7 @@
         </div>
         <!-- category selection -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-folder-open prefix"></i>
                 <select id="category" name="category" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
@@ -41,7 +41,7 @@
         </div>
         <!-- isbn -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-barcode prefix"></i>
                 <input id="isbn" name="isbn" type="text" class="validate" required>
                 <label for="isbn">ISBN</label>
@@ -49,7 +49,7 @@
         </div>
         <!-- publisher -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="far fa-building prefix"></i>
                 <input id="publisher" name="publisher" minlength="5" maxlength="50" type="text" class="validate"
                     required>
@@ -58,7 +58,7 @@
         </div>
         <!-- price -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-money-bill-alt prefix"></i>
                 <input id="price" name="price" minlength="4" maxlength="5" type="text" class="validate" required>
                 <label for="price">Price</label>
@@ -66,7 +66,7 @@
         </div>
         <!-- release date picker -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-calendar-alt prefix"></i>
                 <input id="release_date" name="release_date" type="date" class="validate" required>
                 <label for="release_date">Release Date</label>
@@ -74,7 +74,7 @@
         </div>
         <!-- website url -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fab fa-internet-explorer prefix"></i>
                 <input id="website_url" name="website_url" type="url" class="validate" required>
                 <label for="website_url">URL to puchase this book</label>
@@ -82,7 +82,7 @@
         </div>
         <!-- image url -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-portrait prefix"></i>
                 <input id="image_url" name="image_url" type="url" class="validate" required>
                 <label for="website_url">Book Cover URL</label>
@@ -90,7 +90,7 @@
         </div>
         <!-- star rating -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class=" far fa-solid fa-star prefix"></i>
                 <input id="star" name="star" type="number" min="1" max="10" class="validate" required>
                 <label for="star">Book Rating(Out of 10):</label>
@@ -98,7 +98,7 @@
         </div>
         <!-- comments -->
         <div class="row">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="far fa-comment-dots prefix"></i>
                 <textarea id="comments" name="comments" minlength="5" maxlength="200"
                     class="materialize-textarea validate" required></textarea>
@@ -107,8 +107,8 @@
         </div>
         <!-- submit button -->
         <div class="row">
-            <div class="col s12 m12 center-align">
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+            <div class="col s12 m12 l12 center-align">
+                <button type="submit" class="btn-large light-blue darken-1">
                     Add Book <i class="fas fa-plus-square right"></i>
                 </button>
             </div>

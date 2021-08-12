@@ -7,19 +7,19 @@
 </p>
 
 <div class="row card-panel search">
-    <form action="{{ url_for('search') }}" method="post" class="col s12 m12">
+    <form action="{{ url_for('search') }}" method="post" class="col s12 m12 l12">
         <div class="row valign-wrapper center-align">
-            <div class="input-field col s12 m12">
+            <div class="input-field col s12 m12 l12">
                 <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                 <input type="text" name="query" id="query" minlength="3" class="validate" required>
                 <label for="query">Search Books</label>
             </div>
-            <div class="col s12 m12">
+            <div class="col s12 m12 l12">
 
-                <button type="submit" class="light-blue darken-1 btn text-shadow">
+                <button type="submit" class="light-blue darken-1 btn">
                     <i class="fas fa-search left"></i> Search
                 </button>
-                <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
+                <a href="{{ url_for('get_books') }}" class="red btn">Reset</a>
             </div>
         </div>
     </form>
@@ -31,8 +31,8 @@
 <ul class="collapsible">
     {% for book in books %}
     <li>
-        <div class="collapsible-header white-text light-blue darken-4 text-shadow">
-            <div class="col s12 m12">
+        <div class="collapsible-header white-text light-blue darken-4">
+            <div class="col s12 m12 l12">
                 <strong>{{book.book_name}}
                     <i class=" far fa-solid fa-star prefix">{{book.star}}</i>
                     {{book.comments}}</strong>
@@ -43,11 +43,11 @@
 
         </div>
         <div class="collapsible-body">
-            <h5><strong>{{ book.book_name }}</strong></h5>
-            <h5><strong>{{ book.author_name }}</strong></h5>
-            <h5><strong>{{ book.category }}</strong></h5>
-            <h5><img src="{{ book.image_url}}" alt="Book Cover"></h5>
-            <h5><strong> <a href="{{ book.website_url}}" target="_blank">Click here to purchase the book.</a></strong>
+            <h5>Book Name: <strong>{{ book.book_name }}</strong></h5>
+            <h5>By: <strong>{{ book.author_name }}</strong></h5>
+            <h5>Category: <strong>{{ book.category }}</strong></h5>
+            <h5><img src="{{ book.image_url}}" alt="Book Cover" class="cover"></h5>
+            <h5>Website URL: <strong> <a href="{{ book.website_url}}" target="_blank">Click here to purchase the book.</a></strong>
         </div>
     </li>
     {% endfor %}

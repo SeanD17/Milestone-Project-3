@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-       <div class="col s12 m12">
+       <div class="col s12 m12 l12">
      
         <div class="card-panel">
             <h3>
@@ -17,8 +17,8 @@
 <ul class="collapsible">
     {% for book in books %}
     <li>
-        <div class="collapsible-header white-text light-blue darken-4 text-shadow">
-            <div class="col s12 m12">
+        <div class="collapsible-header white-text light-blue darken-4">
+            <div class="col s12 m12 l12">
                 <strong>{{book.book_name}}
                     <i class=" far fa-solid fa-star prefix">{{book.star}}</i>
                     {{book.comments}}</strong>
@@ -43,7 +43,7 @@
             <h5>Publisher: <strong>{{ book.publisher }}</strong></h5>
             <h5>Price: <strong>{{ book.price }}</strong></h5>
             <h5>Release Date: <strong>{{ book.release_date }}</strong></h5>
-            <h5><img src="{{ book.image_url}}" alt="Book Cover"></h5>
+            <h5><img src="{{ book.image_url}}" alt="Book Cover" class="cover"></h5>
             <h5>Website URL: <strong> <a href="{{ book.website_url}}" target="_blank">Website URL</a></strong>
                 <h5>Your Book Rating: <strong><i class=" far fa-solid fa-star prefix">{{book.star}}</i></strong>
                 </h5>
