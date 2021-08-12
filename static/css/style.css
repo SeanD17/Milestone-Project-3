@@ -21,7 +21,7 @@ footer {
     background-color: orange;
     color: #fafafa;
     text-align: center;
-    padding-bottom: 5%;
+    padding: 1%;
 }
 
 .social-title {
@@ -59,7 +59,7 @@ h3 {
     background-attachment: fixed;
     margin: auto;
     background-position: bottom;
-    padding: 5%;
+    padding: 1%;
 
 }
 
@@ -68,4 +68,9 @@ h3 {
     padding: 1%;
     margin: auto;
     background-color: orange;
+}
+.cover{
+    display: block;
+    margin: auto;
+    width: 50%;
 }
