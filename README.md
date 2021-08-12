@@ -7,19 +7,23 @@
 
 <p align="center"><strong>Dolan's Good Books</strong> 
 
-
+A Book review site where users can add a book to the site,edit a book a user has created and view other users comments and ratings.
 
 The project has a couple of pages:
 
-1: 
+1:A homepage that allows users to search for a book, and view other books created by users with their comments and ratings.
 
-2: 
+2:A login page where users can either login or register for an account.
 
-3: 
+3:A page where a user can add a new book to the site.
+
+4:Page where user can edit a book they have created on the site.
+
+5:Page where the admin of the site can add or edit categories that is used for books.
 
 [Link to website](https://milestone-project-3-book.herokuapp.com/) here to see the website.
 
-![Website]()
+![Website](static/images/dolans_good_books.png)
 
 ## Table of Contents
 > - [UX](#ux)
@@ -155,6 +159,8 @@ HTML - [W3C](https://validator.w3.org/) - Markup Validation.
 <p align="center"><strong> CSS Validation</strong></p>
 
 CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
+
+[Validation Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgithub.com%2FSeanD17%2FMilestone-Project-3%2Fblob%2Fmain%2Fstatic%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 <p align="center"><strong>JavaScript Validation</strong></p>
 
