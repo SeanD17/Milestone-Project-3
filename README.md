@@ -148,24 +148,7 @@ I have included wireframes for each page on this website, click on the below pag
 
 <p align="center"><strong>Existing Features:</strong>
 
-<strong>Feature 1:</strong>
-
-
-<strong>Feature 2:</strong>
-
-
-<strong>Feature 3:</strong>
-
-
-<strong>Feature 4:</strong>
-
-
-<strong>Feature 5:</strong>
-
-
 ## Features Left to Implement:
-
-
 
 ## Technologies Used:
 
@@ -214,36 +197,39 @@ Used for the main development of the site.
 ## Testing:
 <p align="center"><strong>Manual Testing of the site</strong></p>
 
-
-
 <p align="center"><strong>User Stories Testing</strong></p>
-As a User:
-
-""
-
-![])
-
-Expected- 
-
-Result-
-
 
 <p align="center"><strong>Site Responsiveness</strong></p>
-
 
 <p align="center"><strong> HTML Validation</strong></p>
 
 HTML - [W3C](https://validator.w3.org/) - Markup Validation.
+
+![Add Book](static/images/add_book_validation.png)
+
+![Add Category](static/images/add_category_validation.png)
+
+![Base](static/images/base_validation.png)
+
+![Books](static/images/books_validation.png)
+
+![Categories](static/images/categories_validation.png)
+
+![Edit Book](static/images/edit_book_validation.png)
+
+![Edit Category](static/images/edit_category_validation.png)
+
+![Login](static/images/login_validation.png)
+
+![Profile](static/images/profile_validation.png)
+
+![Register](static/images/register_validation.png)
 
 <p align="center"><strong> CSS Validation</strong></p>
 
 CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
 
 [Validation Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgithub.com%2FSeanD17%2FMilestone-Project-3%2Fblob%2Fmain%2Fstatic%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-<p align="center"><strong>JavaScript Validation</strong></p>
-
-JavaScript - [JSHINT](https://jshint.com/) - JavaScript Validation.
 
 <p align="center"><strong>Project Bugs and Solutions</strong></p>
 
