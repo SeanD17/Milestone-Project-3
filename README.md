@@ -169,6 +169,20 @@ I have included wireframes for each page on this website, click on the below pag
 
 ## Technologies Used:
 
+[HTML](https://html.com/)
+Used to create the structure of the web site.
+
+[CSS](https://www.w3schools.com/css/css_intro.asp)
+Used to style the website.
+
+[Python](https://www.python.org/)
+Used to create the CRUD functionality.
+
+[Materialize](https://materializecss.com/about.html)
+Used to design the site for mobile users and for other features.
+
+[MongoDB](https://www.mongodb.com/)
+Used to store the database used for the site.
 
 ## Libraries:
 [FontAwesome](https://fontawesome.com/)
