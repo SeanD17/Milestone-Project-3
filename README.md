@@ -50,6 +50,49 @@ The project has a couple of pages:
 ## User Stories:
 As a User:
 
+"I want to see all the books on this site that users have rated and commented on"
+
+![Book List](static/images/show_books.png)
+
+"If there is a book im interested in, i want to learn more about this book and where to go to buy it"
+
+![Book Details](static/images/show_books.png)
+
+"I want to either create an account or login to the site so that i can add my own book details"
+
+![Register](static/images/register.png)
+
+![Login](static/images/login.png)
+
+"I want to fill out a form that will allow me to add a book to the site for other users to see"
+
+![Add Book Link](static/images/add_book_link.png)
+
+![Add Book](static/images/add_book.png)
+
+"I want to fill out a form that will allow me to edit a book i have already created on the site"
+
+![Edit Book Link](static/images/edit_book_link.png)
+
+![Edit Book](static/images/edit_book.png)
+
+As an Admin:
+
+"I want to add a new book category to the site"
+
+![Add Category Link](static/images/add_category_link.png)
+
+![Add Category](static/images/add_category.png)
+
+"I want to edit a book category on the site"
+
+![Edit Category Link](static/images/edit_category_link.png)
+
+![Edit Category](static/images/edit_category.png)
+
+"I want to delete a category from the site"
+
+![Delete Category Link](static/images/delete_category_link.png)
 
 ## Strategy:
 
