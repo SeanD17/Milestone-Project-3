@@ -95,7 +95,7 @@ As an Admin:
 ![Delete Category Link](static/images/delete_category_link.png)
 
 ## Strategy:
-
+I wanted to create a user friendly website that would have Create,Update,Read and Delete (CRUD) functionality.
 
 ## Scope:
 
