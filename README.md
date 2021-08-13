@@ -184,6 +184,9 @@ Used to design the site for mobile users and for other features.
 [MongoDB](https://www.mongodb.com/)
 Used to store the database used for the site.
 
+[Heroku](https://id.heroku.com/login)
+Used to host the site.
+
 ## Libraries:
 [FontAwesome](https://fontawesome.com/)
 Used frequently for icons used throughout the website.
@@ -247,6 +250,38 @@ JavaScript - [JSHINT](https://jshint.com/) - JavaScript Validation.
 <p align="center"><strong>Remaining bugs</strong></p>
 
 ## Deployment:
+
+I did the following to deploy my site:
+
+Removed all my hard-coded environment variables. 
+
+These were placed in the Heroku Config Vars for production.
+
+Ensured the applications requirements.txt is up-to-date with all the latest packages installed for my app being noted on this file.
+
+The command to update requirements  is pip3 freeze > requirements.txt
+
+Set up the Procfile - A Procfile is required by Heroku in order to tell the service worker what command to run for my application to start.
+
+Set Flask's debugging to False.
+
+Pushed all my latest production ready code to GitHub ready for deployment via Heroku's GitHub function where you can deploy from GitHub the production ready app.
+
+Upon successful deployment Heroku will give you the URL that is hosted your app
+
+If you want to create a copy of this site on GitHub,do the following:
+
+To access the code, it can be run locally by either selecting "clone" which provides an URL one can use on their local machine or "download" which is where one can download the zip file on to their machine.
+
+Install the projects requirements.txt using pip3 install -r requirements.txt
+
+You will need to update a few environment variables before you can run the app.
+
+app.config["MONGO_DBNAME"] = "cookbook_creation"
+app.config["MONGO_URI"] = os.getenv("MONGO_URI", "monogodb://localhost")
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
+Once the above steps are complete you can try run the application using python3 main.py
 
 ## Credits:
 
