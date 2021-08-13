@@ -98,15 +98,23 @@ As an Admin:
 I wanted to create a user friendly website that would have Create,Update,Read and Delete (CRUD) functionality.
 
 ## Scope:
+I created a database for the website on MongoDB,see below schema
 
+![Database Schema](static/images/database_schema.png)
 
 ## Structure:
+I wanted users to see all the books on the site that have been rated and commented on.
 
+I would then direct them to the Login/Register pages.
+
+After the user has logged in they would now have the option of adding a book to the site.
+
+If the admin has logged in they would now have the option of deleting/editing books,and adding/editing categories.
 
 I also provided my profile links to GitHub and LinkedIn.
 
 ## Surface:
-I used orange text color to make it stand out against the background.
+I used various text colors to make it stand out against the background.
 
 The orange background footer and red background header was chosen to stand out on the site.
 
@@ -114,19 +122,28 @@ The orange background footer and red background header was chosen to stand out o
 I used Font Awesome for the social media icons of GitHub and LinkedIn,as well as for various icons seen throughout the site.
 
 ## Wireframes:
-I have included wireframes for each page on this website,these can be found on the wireframes folder:
+I have included wireframes for each page on this website, click on the below page names to see these wireframes:
 
-                                    Homepage.pdf
-                                    Manage Categories.pdf
-                                    Profile Admin.pdf
-                                    Profile.pdf
-                                    Register.pdf
-                                    Edit Category.pdf
-                                    Edit Books.pdf
-                                    Add Category.pdf
-                                    Add Books.pdf
-                                    Login.pdf
-                                    
+[Add Books](wireframes/Dolans_Good_Books_Add_Books.pdf)
+
+[Add Category](wireframes/Dolans_Good_Books_Add_Category.pdf)
+
+[Edit Books](wireframes/Dolans_Good_Books_Edit_Books.pdf)
+
+[Edit Category](wireframes/Dolans_Good_Books_Edit_Category.pdf)
+
+[Homepage](wireframes/Dolans_Good_Books_Homepage.pdf)
+
+[Login](wireframes/Dolans_Good_Books_Login.pdf)
+
+[Manage Categories](wireframes/Dolans_Good_Books_Manage_Categories.pdf)
+
+[Admin Profile](wireframes/Dolans_Good_Books_Profile_Admin.pdf)
+
+[Profile](wireframes/Dolans_Good_Books_Profile.pdf)
+
+[Register](wireframes/Dolans_Good_Books_Register.pdf)
+                               
 ## Features:
 
 <p align="center"><strong>Existing Features:</strong>
